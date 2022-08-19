@@ -1,7 +1,7 @@
 const Cart = require('../models/cartModel');
 
 // add products to cart
-const addItemsToCart = catchAsync(async (req, res) => {
+const createCartItems = catchAsync(async (req, res) => {
   const user = req.user._id;
 
   const cart = new Cart({
@@ -20,7 +20,7 @@ const addItemsToCart = catchAsync(async (req, res) => {
 });
 
 // fetch all products of cart
-const getCartProducts = catchAsync(async (req, res) => {});
+const getCartItems = catchAsync(async (req, res) => {});
 
 // delete cart items
 const deleteCartItems = catchAsync(async (req, res) => {
